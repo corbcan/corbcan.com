@@ -91,6 +91,8 @@ main {
     flex: 10;
     overflow: hidden;
     padding-top: 6rem;
+    width: 100%;
+    flex-wrap: nowrap;
     
 }
 
@@ -217,7 +219,8 @@ ul {
     flex-direction: column;
     justify-content: flex;
     position: relative;
-    width: 100%;
+    width: 50%;
+    box-sizing: border-box;
 }
 
 #content {
@@ -241,6 +244,10 @@ ul {
     color: #e407c3;
 }
 @media (max-width: 768px) {
+    main {
+        flex-direction: row;
+        width: 100%;
+    }
     body {
         transform: scale(0.75); /* Adjust scale factor as needed */
         transform-origin: top left;
@@ -259,6 +266,7 @@ ul {
 
     .left-side, .right-side {
         padding: 1rem;
+        width: 50%;
     }
 
     h1 {
@@ -271,13 +279,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-    main {
-        flex-direction: row;
-    }
 
-    .left-side, .right-side {
-        width: 50%;
-    }
 
     h1 {
         font-size: 2rem;
