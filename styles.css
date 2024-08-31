@@ -252,7 +252,6 @@ ul {
         width: 100%;
     }
     body {
-        transform: scale(0.75); /* Adjust scale factor as needed */
         transform-origin: top left;
     }
     
