@@ -15,6 +15,8 @@ body {
     background-color: #381d00;
     padding: 0;
     margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
     
     
 }
@@ -93,6 +95,7 @@ main {
     padding-top: 6rem;
     width: 100%;
     flex-wrap: nowrap;
+    overflow-x: hidden;
     
 }
 
