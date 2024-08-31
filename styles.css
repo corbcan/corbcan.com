@@ -240,6 +240,35 @@ ul {
 .left-side ul li:hover {
     color: #e407c3;
 }
+@media (max-width: 768px) {
+    body {
+        transform: scale(0.75); /* Adjust scale factor as needed */
+        transform-origin: top left;
+    }
+    
+    /* Adjustments to prevent overflow issues */
+    body, html {
+        overflow-x: hidden;
+    }
+
+    /* Additional specific tweaks */
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .left-side, .right-side {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .right-side a {
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width: 768px) {
     main {
